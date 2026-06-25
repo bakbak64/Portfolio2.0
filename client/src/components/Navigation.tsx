@@ -86,6 +86,8 @@ export default function Navigation({ activeSection }: NavigationProps) {
         <div className="flex items-center gap-4">
           <motion.a
             href="#"
+            target="_blank"
+            rel="noopener noreferrer"
             className="hidden sm:inline-block px-4 py-2 text-sm font-mono border border-primary text-primary rounded hover:bg-primary/10 transition-colors duration-200"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}

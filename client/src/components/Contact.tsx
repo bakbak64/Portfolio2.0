@@ -71,7 +71,7 @@ export default function Contact() {
             className="flex flex-col sm:flex-row gap-4 justify-center mb-16"
           >
             <motion.a
-              href="mailto:aadi02anu07@gmail.com"
+              href="mailto:hello@example.com"
               whileHover={{ scale: 1.05, boxShadow: "0 0 30px rgba(57, 255, 136, 0.4)" }}
               whileTap={{ scale: 0.95 }}
               className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-primary text-background font-mono font-semibold rounded text-lg transition-all duration-200"
@@ -82,7 +82,7 @@ export default function Contact() {
             </motion.a>
 
             <motion.a
-              href="tel:+919560814638"
+              href="tel:+1-555-0123"
               whileHover={{ scale: 1.05, boxShadow: "0 0 30px rgba(61, 169, 252, 0.4)" }}
               whileTap={{ scale: 0.95 }}
               className="inline-flex items-center justify-center gap-3 px-8 py-4 border-2 border-secondary text-secondary font-mono font-semibold rounded text-lg transition-all duration-200 hover:bg-secondary/10"
@@ -98,10 +98,10 @@ export default function Contact() {
             className="space-y-4 mb-16 text-foreground/70"
           >
             <p className="font-mono text-sm">
-              📧 <a href="mailto:aadi02anu07@gmail.com" className="text-primary hover:text-primary/80 transition-colors">aadi02anu07@gmail.com</a>
+              📧 <a href="mailto:hello@example.com" className="text-primary hover:text-primary/80 transition-colors">hello@example.com</a>
             </p>
             <p className="font-mono text-sm">
-              📱 <a href="tel:+919560814638" className="text-secondary hover:text-secondary/80 transition-colors">+91-9560814638</a>
+              📱 <a href="tel:+1-555-0123" className="text-secondary hover:text-secondary/80 transition-colors">+1 (555) 0123</a>
             </p>
           </motion.div>
 
@@ -111,7 +111,7 @@ export default function Contact() {
             className="flex justify-center gap-6 mb-16"
           >
             <motion.a
-              href="https://github.com"
+              href="https://github.com/aadi02anu07"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.2, color: "#39FF88" }}
@@ -122,7 +122,7 @@ export default function Contact() {
             </motion.a>
 
             <motion.a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/aditya-srivastava-069b53287/"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.2, color: "#3DA9FC" }}
@@ -133,7 +133,7 @@ export default function Contact() {
             </motion.a>
 
             <motion.a
-              href="mailto:aadi02anu07@gmail.com"
+              href="mailto:hello@example.com"
               whileHover={{ scale: 1.2, color: "#39FF88" }}
               whileTap={{ scale: 0.9 }}
               className="text-foreground/60 hover:text-primary transition-colors"
@@ -142,7 +142,7 @@ export default function Contact() {
             </motion.a>
 
             <motion.a
-              href="tel:+919560814638"
+              href="tel:+1-555-0123"
               whileHover={{ scale: 1.2, color: "#3DA9FC" }}
               whileTap={{ scale: 0.9 }}
               className="text-foreground/60 hover:text-secondary transition-colors"

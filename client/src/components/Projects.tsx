@@ -34,8 +34,8 @@ const projects: Project[] = [
       "Tailwind CSS",
       "JWT",
     ],
-    github: "#",
-    live: "#",
+    github: "https://github.com/aadi02anu07/Swasthify_2.0",
+    live: "https://swasthify-v2.vercel.app/",
   },
   {
     title: "Amazon Go",
@@ -59,8 +59,8 @@ const projects: Project[] = [
       "Amazon Bedrock",
       "Serverless Framework v3",
     ],
-    github: "#",
-    live: "#",
+    github: "https://github.com/aadi02anu07/AmazonGo",
+    live: "https://master.dogt4l5r4vcs.amplifyapp.com/",
   },
 ];
 

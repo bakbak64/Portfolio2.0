@@ -141,7 +141,7 @@ export default function Hero() {
           className="flex items-center gap-6"
         >
           <motion.a
-            href="https://github.com"
+            href="https://github.com/aadi02anu07"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.2, color: "#39FF88" }}
@@ -151,7 +151,7 @@ export default function Hero() {
           </motion.a>
 
           <motion.a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/aditya-srivastava-069b53287/"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.2, color: "#3DA9FC" }}
@@ -161,7 +161,7 @@ export default function Hero() {
           </motion.a>
 
           <motion.a
-            href="mailto:aadi02anu07@gmail.com"
+            href="mailto:hello@example.com"
             whileHover={{ scale: 1.2, color: "#39FF88" }}
             className="text-foreground/70 hover:text-primary transition-colors"
           >
@@ -169,7 +169,7 @@ export default function Hero() {
           </motion.a>
 
           <motion.a
-            href="tel:+919560814638"
+            href="tel:+1-555-0123"
             whileHover={{ scale: 1.2, color: "#3DA9FC" }}
             className="text-foreground/70 hover:text-secondary transition-colors"
           >
