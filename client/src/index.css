@@ -43,83 +43,111 @@
 }
 
 :root {
-  --primary: var(--color-blue-700);
-  --primary-foreground: var(--color-blue-50);
-  --sidebar-primary: var(--color-blue-600);
-  --sidebar-primary-foreground: var(--color-blue-50);
-  --chart-1: var(--color-blue-300);
-  --chart-2: var(--color-blue-500);
-  --chart-3: var(--color-blue-600);
-  --chart-4: var(--color-blue-700);
-  --chart-5: var(--color-blue-800);
-  --radius: 0.65rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.235 0.015 65);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.235 0.015 65);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.235 0.015 65);
-  --secondary: oklch(0.98 0.001 286.375);
-  --secondary-foreground: oklch(0.4 0.015 65);
-  --muted: oklch(0.967 0.001 286.375);
-  --muted-foreground: oklch(0.552 0.016 285.938);
-  --accent: oklch(0.967 0.001 286.375);
-  --accent-foreground: oklch(0.141 0.005 285.823);
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(0.92 0.004 286.32);
-  --input: oklch(0.92 0.004 286.32);
-  --ring: oklch(0.623 0.214 259.815);
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.235 0.015 65);
-  --sidebar-accent: oklch(0.967 0.001 286.375);
-  --sidebar-accent-foreground: oklch(0.141 0.005 285.823);
-  --sidebar-border: oklch(0.92 0.004 286.32);
-  --sidebar-ring: oklch(0.623 0.214 259.815);
+  /* Silicon & Signals Design System */
+  /* Primary accent: Circuit-board green */
+  --primary: #39FF88;
+  --primary-foreground: #0A0B0D;
+  /* Secondary accent: Signal-blue */
+  --secondary: #3DA9FC;
+  --secondary-foreground: #0A0B0D;
+  /* Sidebar primary (not used in portfolio, but keeping for consistency) */
+  --sidebar-primary: #39FF88;
+  --sidebar-primary-foreground: #0A0B0D;
+  /* Chart colors (green/blue theme) */
+  --chart-1: #39FF88;
+  --chart-2: #3DA9FC;
+  --chart-3: #00D9FF;
+  --chart-4: #39FF88;
+  --chart-5: #3DA9FC;
+  /* Radius: minimal, functional only */
+  --radius: 0.25rem;
+  /* Near-black background, off-white text */
+  --background: #0A0B0D;
+  --foreground: #F2F3F5;
+  /* Card styling */
+  --card: #0E1014;
+  --card-foreground: #F2F3F5;
+  /* Popover styling */
+  --popover: #0E1014;
+  --popover-foreground: #F2F3F5;
+  /* Muted elements (for secondary text, disabled states) */
+  --muted: #1A1D24;
+  --muted-foreground: #A0A3A8;
+  /* Accent (same as primary for consistency) */
+  --accent: #39FF88;
+  --accent-foreground: #0A0B0D;
+  /* Destructive (red for errors, keeping default) */
+  --destructive: #EF4444;
+  --destructive-foreground: #F2F3F5;
+  /* Border and input */
+  --border: #1A1D24;
+  --input: #0E1014;
+  --ring: #39FF88;
+  /* Sidebar (not used in portfolio) */
+  --sidebar: #0A0B0D;
+  --sidebar-foreground: #F2F3F5;
+  --sidebar-accent: #39FF88;
+  --sidebar-accent-foreground: #0A0B0D;
+  --sidebar-border: #1A1D24;
+  --sidebar-ring: #39FF88;
 }
 
 .dark {
-  --primary: var(--color-blue-700);
-  --primary-foreground: var(--color-blue-50);
-  --sidebar-primary: var(--color-blue-500);
-  --sidebar-primary-foreground: var(--color-blue-50);
-  --background: oklch(0.141 0.005 285.823);
-  --foreground: oklch(0.85 0.005 65);
-  --card: oklch(0.21 0.006 285.885);
-  --card-foreground: oklch(0.85 0.005 65);
-  --popover: oklch(0.21 0.006 285.885);
-  --popover-foreground: oklch(0.85 0.005 65);
-  --secondary: oklch(0.24 0.006 286.033);
-  --secondary-foreground: oklch(0.7 0.005 65);
-  --muted: oklch(0.274 0.006 286.033);
-  --muted-foreground: oklch(0.705 0.015 286.067);
-  --accent: oklch(0.274 0.006 286.033);
-  --accent-foreground:  oklch(0.92 0.005 65);
-  --destructive: oklch(0.704 0.191 22.216);
-  --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.488 0.243 264.376);
-  --chart-1: var(--color-blue-300);
-  --chart-2: var(--color-blue-500);
-  --chart-3: var(--color-blue-600);
-  --chart-4: var(--color-blue-700);
-  --chart-5: var(--color-blue-800);
-  --sidebar: oklch(0.21 0.006 285.885);
-  --sidebar-foreground: oklch(0.85 0.005 65);
-  --sidebar-accent: oklch(0.274 0.006 286.033);
-  --sidebar-accent-foreground:  oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.488 0.243 264.376);
+  /* Dark theme (same as root for this portfolio) */
+  --primary: #39FF88;
+  --primary-foreground: #0A0B0D;
+  --sidebar-primary: #39FF88;
+  --sidebar-primary-foreground: #0A0B0D;
+  --background: #0A0B0D;
+  --foreground: #F2F3F5;
+  --card: #0E1014;
+  --card-foreground: #F2F3F5;
+  --popover: #0E1014;
+  --popover-foreground: #F2F3F5;
+  --secondary: #3DA9FC;
+  --secondary-foreground: #0A0B0D;
+  --muted: #1A1D24;
+  --muted-foreground: #A0A3A8;
+  --accent: #39FF88;
+  --accent-foreground: #0A0B0D;
+  --destructive: #EF4444;
+  --destructive-foreground: #F2F3F5;
+  --border: #1A1D24;
+  --input: #0E1014;
+  --ring: #39FF88;
+  --chart-1: #39FF88;
+  --chart-2: #3DA9FC;
+  --chart-3: #00D9FF;
+  --chart-4: #39FF88;
+  --chart-5: #3DA9FC;
+  --sidebar: #0A0B0D;
+  --sidebar-foreground: #F2F3F5;
+  --sidebar-accent: #39FF88;
+  --sidebar-accent-foreground: #0A0B0D;
+  --sidebar-border: #1A1D24;
+  --sidebar-ring: #39FF88;
 }
 
+/* Typography: Geist for display/body, JetBrains Mono for labels/code */
 @layer base {
   * {
     @apply border-border outline-ring/50;
   }
+  
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
+    font-family: "Geist", sans-serif;
   }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Geist", sans-serif;
+    font-weight: 700;
+  }
+  
+  code, pre, .monospace {
+    font-family: "JetBrains Mono", monospace;
+  }
+  
   button:not(:disabled),
   [role="button"]:not([aria-disabled="true"]),
   [type="button"]:not(:disabled),
@@ -160,6 +188,33 @@
     min-width: 0;
   }
 
+  /* Monospace label styling (for section numbers like "// 01") */
+  .section-label {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.875rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    color: #39FF88;
+  }
+
+  /* LED glow effect on hover */
+  .led-glow {
+    transition: box-shadow 0.2s ease-out;
+  }
+
+  .led-glow:hover {
+    box-shadow: 0 0 12px rgba(57, 255, 136, 0.6);
+  }
+
+  .led-glow-blue:hover {
+    box-shadow: 0 0 12px rgba(61, 169, 252, 0.6);
+  }
+
+  /* Custom cursor styles */
+  .cursor-custom {
+    cursor: none;
+  }
+
   @media (min-width: 640px) {
     .container {
       padding-left: 1.5rem; /* 24px - tablet padding */
@@ -173,5 +228,14 @@
       padding-right: 2rem;
       max-width: 1280px; /* Standard content width */
     }
+  }
+}
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
 }
