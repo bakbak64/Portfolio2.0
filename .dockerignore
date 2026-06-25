@@ -17,5 +17,3 @@ build
 .next
 .manus-logs
 .project-config.json
-patches
-pnpm-lock.yaml
