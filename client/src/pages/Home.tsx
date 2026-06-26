@@ -1,5 +1,4 @@
 import Navigation from "@/components/Navigation";
-import CircuitBackground from "@/components/CircuitBackground";
 import ScrollProgress from "@/components/ScrollProgress";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
@@ -16,9 +15,6 @@ import Contact from "@/components/Contact";
 export default function Home() {
   return (
     <div className="min-h-screen bg-background text-foreground">
-      {/* Circuit background (fixed, parallax) */}
-      <CircuitBackground />
-
       {/* Scroll progress indicator */}
       <ScrollProgress />
 

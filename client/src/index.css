@@ -1,44 +1,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-/* Circuit Background Styles */
-:root {
-  --bg-grid-color: rgba(242, 243, 245, 0.08);
-  --bg-accent-color: #39FF88;
-}
-
-.bg-grid {
-  position: fixed;
-  inset: 0;
-  z-index: -1;
-  pointer-events: none;
-  opacity: 0.5;
-  background-image:
-    linear-gradient(var(--bg-grid-color) 1px, transparent 1px),
-    linear-gradient(90deg, var(--bg-grid-color) 1px, transparent 1px);
-  background-size: 64px 64px;
-  mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, #000 0%, transparent 75%);
-}
-
-.bg-traces {
-  position: fixed;
-  inset: 0;
-  z-index: -1;
-  pointer-events: none;
-  opacity: 0.5;
-  will-change: transform;
-}
-
-.bg-traces path {
-  stroke: var(--bg-accent-color);
-  stroke-width: 1;
-  fill: none;
-}
-
-.bg-traces circle {
-  fill: var(--bg-accent-color);
-}
-
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
