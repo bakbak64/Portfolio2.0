@@ -206,16 +206,30 @@ export default function Projects() {
                   whileHover={{ scale: 1.02 }}
                   transition={{ duration: 0.3 }}
                 >
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="text-center">
-                      <div className="text-6xl font-bold text-foreground/10 mb-2">
-                        {index + 1}
+                  {index === 0 ? (
+                    <img
+                      src="/manus-storage/swasthify-hero_d849ab7a.png"
+                      alt="Swasthify"
+                      className="w-full h-full object-cover"
+                    />
+                  ) : index === 1 ? (
+                    <img
+                      src="/manus-storage/amazongo-hero_32685246.png"
+                      alt="Amazon Go"
+                      className="w-full h-full object-cover"
+                    />
+                  ) : (
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <div className="text-center">
+                        <div className="text-6xl font-bold text-foreground/10 mb-2">
+                          {index + 1}
+                        </div>
+                        <p className="text-foreground/30 font-mono text-sm">
+                          {project.title}
+                        </p>
                       </div>
-                      <p className="text-foreground/30 font-mono text-sm">
-                        {project.title}
-                      </p>
                     </div>
-                  </div>
+                  )}
 
                   {/* Animated border */}
                   <motion.div

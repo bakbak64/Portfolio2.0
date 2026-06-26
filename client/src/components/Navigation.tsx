@@ -101,7 +101,7 @@ export default function Navigation({ activeSection: propActiveSection }: Navigat
         {/* Right Side: Resume & Theme Toggle */}
         <div className="flex items-center gap-4">
           <motion.a
-            href="#"
+            href="https://drive.google.com/file/d/1YahbMLjW-NFPtekYoFqwIqnn0lXKwMPa/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="hidden sm:inline-block px-4 py-2 text-sm font-mono border border-primary text-primary rounded hover:bg-primary/10 transition-colors duration-200"
