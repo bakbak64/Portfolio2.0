@@ -132,10 +132,11 @@
 @layer base {
   * {
     @apply border-border outline-ring/50;
+    cursor: none !important;
   }
-  
   body {
-    @apply bg-background text-foreground font-sans;
+    @apply bg-background text-foreground;
+    cursor: none !important;
     font-family: "Geist", sans-serif;
   }
   
