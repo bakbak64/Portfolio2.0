@@ -23,7 +23,7 @@ const experiences: ExperienceItem[] = [
       "Validated functionality through hardware-in-the-loop testing; debugged I2C ACK/NACK handling and SPI clock-polarity mismatches using STM32CubeIDE.",
     ],
     tech: ["Embedded C", "STM32CubeIDE", "STM32 Nucleo-F446RE"],
-    link: "#",
+    link: "https://github.com/aadi02anu07/STM32_Driver_Development",
   },
 ];
 
