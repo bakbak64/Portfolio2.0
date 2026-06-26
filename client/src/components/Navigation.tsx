@@ -5,12 +5,26 @@ interface NavigationProps {
   activeSection?: string;
 }
 
-export default function Navigation({ activeSection }: NavigationProps) {
+export default function Navigation({ activeSection: propActiveSection }: NavigationProps) {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [activeSection, setActiveSection] = useState<string>(propActiveSection || "");
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
+      
+      // Track active section
+      const sections = ["hero", "about", "experience", "projects", "skills", "achievements", "contact"];
+      for (const sectionId of sections) {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          const rect = element.getBoundingClientRect();
+          if (rect.top <= 100 && rect.bottom >= 100) {
+            setActiveSection(sectionId);
+            break;
+          }
+        }
+      }
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -20,6 +34,7 @@ export default function Navigation({ activeSection }: NavigationProps) {
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
+      setActiveSection(id);
       element.scrollIntoView({ behavior: "smooth" });
     }
   };
@@ -69,7 +84,8 @@ export default function Navigation({ activeSection }: NavigationProps) {
             <motion.button
               key={item.id}
               onClick={() => scrollToSection(item.id)}
-              className={`text-sm font-medium transition-colors duration-200 font-mono ${
+              type="button"
+              className={`text-sm font-medium transition-colors duration-200 font-mono cursor-pointer ${
                 activeSection === item.id
                   ? "text-primary"
                   : "text-foreground/70 hover:text-foreground"
