@@ -1,0 +1,98 @@
+# Exclude.txt - Files and folders to ignore when running the project locally
+
+# Dependencies (installed via pnpm/npm)
+node_modules/
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
+
+# Build outputs
+dist/
+build/
+.next/
+out/
+
+# Development/IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+*.sublime-project
+*.sublime-workspace
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+.env.production.local
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Manus-specific
+.manus-logs/
+.project-config.json
+
+# Git
+.git/
+.gitignore
+
+# OS files
+.DS_Store
+.AppleDouble
+.LSOverride
+*.pem
+
+# Testing
+coverage/
+.nyc_output/
+
+# Cache
+.cache/
+.eslintcache
+.turbo/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Documentation (optional - keep if needed)
+# README.md
+# CHANGELOG.md
+
+# Project-specific (optional)
+# ideas.md
+# CIRCUIT_BACKGROUND_GUIDE.md
+
+# Docker (if not needed locally)
+# Dockerfile
+# .dockerignore
+
+# CI/CD
+.github/
+.gitlab-ci.yml
+.circleci/
+
+# Package manager lock files (choose one)
+# Keep pnpm-lock.yaml, exclude others
+package-lock.json
+yarn.lock
+
+# Misc
+.prettierignore
+.prettierrc
+tsconfig.json
+tsconfig.node.json
+vite.config.ts
+components.json
+template.json
+patches/
