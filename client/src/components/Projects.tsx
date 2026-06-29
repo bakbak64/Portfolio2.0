@@ -208,13 +208,13 @@ export default function Projects() {
                 >
                   {index === 0 ? (
                     <img
-                      src="/manus-storage/swasthify-hero_d849ab7a.png"
+                      src="/projects/swasthify.png"
                       alt="Swasthify"
                       className="w-full h-full object-cover"
                     />
                   ) : index === 1 ? (
                     <img
-                      src="/manus-storage/amazongo-hero_32685246.png"
+                      src="/projects/amazongo.png"
                       alt="Amazon Go"
                       className="w-full h-full object-cover"
                     />
